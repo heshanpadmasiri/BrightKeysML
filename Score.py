@@ -1,3 +1,6 @@
+import SpellCorrection
+
+
 def marker_values(values):
   return lambda text: 1 if any(map(lambda t: t.lower() in values, text.split())) else 0
 
@@ -14,6 +17,7 @@ health = marker_values(['life','tired', 'sick'])
 medical = marker_values(['hospital','pain', 'surgery'])
 
 def calculate_score(text):
+  text = SpellCorrection.correct_spellings(text)
   score = 0.15 * depressed_mood(text) + \
         0.14 * loneliness(text) + \
         0.12 * hostility(text) + \

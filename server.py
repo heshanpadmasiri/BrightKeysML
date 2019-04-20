@@ -12,7 +12,7 @@ def get_score():
     score = Score.calculate_score(string)
     return json.dumps({
         'success': True,
-        'score': score
+        'score': score,
     })
 
 if __name__ == "__main__":
