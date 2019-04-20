@@ -5,7 +5,6 @@ api_key = '9f972d1ac2de4e168cd4506a2532cd1e'
 endpoint = "https://api.cognitive.microsoft.com/bing/v7.0/SpellCheck"
 
 def correct_spellings(text):
-    print('test')
     data = {'text': text}
     params = {
         'mkt':'en-us',

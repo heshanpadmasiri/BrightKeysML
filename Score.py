@@ -1,4 +1,5 @@
 import SpellCorrection
+import SentimentAnaltics
 
 
 def marker_values(values):
@@ -28,5 +29,6 @@ def calculate_score(text):
         0.08 * anxiety(text) + \
         0.15 * complaint(text) + \
         0.11 * health(text) + \
-        0.20 * medical(text)
+        0.20 * medical(text) + \
+        0.02 * SentimentAnaltics.get_sentiment(text)
   return min(1,score)
