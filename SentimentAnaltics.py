@@ -1,7 +1,7 @@
 import requests
 import json
 
-api_key = 'fa975a88541e4ffd85370e6ebd6d6caa'
+api_key = '<KEY_HERE>'
 endpoint = 'https://westus.api.cognitive.microsoft.com/text/analytics/v2.1/sentiment'
 
 def get_sentiment(text):

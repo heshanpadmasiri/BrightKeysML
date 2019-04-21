@@ -1,7 +1,7 @@
 import requests
 import json
 
-api_key = '9f972d1ac2de4e168cd4506a2532cd1e'
+api_key = '<KEY_HERE>'
 endpoint = "https://api.cognitive.microsoft.com/bing/v7.0/SpellCheck"
 
 def correct_spellings(text):
